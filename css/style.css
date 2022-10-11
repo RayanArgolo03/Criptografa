@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&family=Poppins&display=swap');
+
+/* Fundo da Página */
+body {
+
+    background-image: url(../img/fundo-criptografa.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    font-size: 29px;
+}
+
+/**/
+
+
+/* Título Encripta*/
+h1 {
+    font-size: 2.3em;
+    background-image: url(../img/background-h1.jpg);
+    background-size: 25px;
+    background-repeat: repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 1%;
+}
+
+/**/
+
+
+/* Subtítulo Digite sua Mensagem */
+h2 {
+    font-size: 40px;
+    color: white;
+    margin: 1%;
+}
+
+/**/
+
+/* Subtítulo Seu Resultado*/
+h3 {
+    font-size: 40px;
+    color: white;
+    margin: 2%;
+}
+
+/**/
+
+
+/* Texto grifado em vermelho */
+span {
+    color: rgb(172, 38, 38);
+}
+
+/**/
+
+
+/* Div Main Principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/**/
+
+
+/* Campos de Tabelas */
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+}
+
+/**/
+
+
+/* Àrea de digitação de texto/resultado da criptografia */
+textarea {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 2px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    font-size: 15px;
+    border: rgb(172, 38, 38) solid 2px;
+    border-radius: 10px;
+    resize: none;
+
+}
+
+/**/
+
+
+/* Seletor que muda cor ao selecionar texto na caixa de digitação */
+textarea::selection {
+    background-color: rgb(3, 3, 3);
+    color: rgb(172, 38, 38);
+}
+
+/**/
+
+/*Estilização do Seletor Select */
+#cripto {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: rgb(172, 38, 38) solid 2px;
+    width: 44%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* Seletor da Linguagem de Criptografia */
+select {
+    width: 100%;
+    margin: 1% 0% 0% 27%;
+    padding: 10px;
+    font-size: 0.6em;
+}
+
+
+/* Estilização ao abrir Seletor da Linguagem de Criptografia */
+select option:nth-child(2) {
+    color: rgb(172, 38, 38);
+}
+
+select option:nth-child(3) {
+    color: rgb(172, 38, 38);
+}
+
+/**/
+
+
+/* Texto dos Inputs Radios */
+.textoBotao {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/**/
+
+
+/* Incremento*/
+.chaveCifra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    display: none;
+    color: aliceblue;
+}
+
+.chaveCifra input {
+    color: white;
+    width: 55px;
+    height: 20px;
+    margin-top: 4%;
+    border: 4px solid rgb(172, 38, 38);
+    background-color: black;
+}
+
+.chaveCifra label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+    color: rgb(255, 255, 255);
+}
+
+/**/
+
+
+/* Botão Resultado */
+
+.codeRadio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.btnResult {
+    font-size: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    background-color: rgb(172, 38, 38);
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.btnResult:hover {
+    background-color: rgb(82, 65, 65);
+    color: rgb(255, 253, 253);
+    transition: 0.5s ease;
+}
+
+
+/* Resultado */
+#resultado {
+
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 0, 0);
+    font-size: 15px;
+    border: rgb(172, 38, 38) solid 2px;
+    border-radius: 10px;
+    resize: none;
+    height: 40px;
+
+}
+
+/**/
+
+
+/* Rodapé */
+footer {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    font-size: 0.6em;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer a img {
+    width: 40px;
+    height: 40px;
+    background-color: none;
+    transition: 1.1s all;
+}
+
+footer a:hover>img {
+    transform: scale(1.1) rotate(360deg);
+}
+
+/**/
+
+
+/* Media Screen Responsividade */
+@media screen and (min-width: 320px) and (max-width: 837px) {
+    body {
+        background-image: url(../img/background-responsive-celular.jpg);
+    }
+}
+
+
+@media screen and (min-width: 838px) and (max-width: 1264px) {
+    body {
+        background-image: url(../img/background-responsive-pc.jpg);
+
+    }
+}

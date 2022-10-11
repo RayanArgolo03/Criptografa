@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encripta</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- Título e Subtítulo -->
+  <main class="container">
+    <h1>Encrip<span>ta</span></h1>
+    <h2>Digite <span>aqui</span> seu texto</h2>
+
+    <form>
+
+      <!-- Digite sua Mensagem -->
+      <textarea id="texto-mensagem"></textarea>
+
+      <!-- Selecione sua criptolinguagem -->
+      <select name="codigo" id="cripto">
+        <option disabled selected>Cripto</option>
+        <option value="base64">Base 64</option>
+        <option value="cesar">Cifra de Cesar</option>
+      </select>
+
+      <!-- Incremento -->
+      <fieldset class="chaveCifra">
+        <label for="chave">Incremento</label>
+        <input type="number" id="chave" placeholder="1 a 25" value="" min="0" max="25" />
+      </fieldset>
+
+      <!-- Botões RADIO de Codificar/Decodificar -->
+      <fieldset class="codeRadio">
+        <div class="divR">
+          <input type="radio" name="code" class="radio" id="code"/>
+          <label for="codificar" class="textoBotao">Codificar</label>
+        </div>
+
+        <div class="divR">
+          <input type="radio" name="code" class="radio" id="decode" value="decodificar"/>
+          <label for="decodificar" class="textoBotao">Decodificar</label>
+        </div>
+      </fieldset>
+
+      <!-- Botão INPUT que imprime o resultado -->
+      <button class="btnResult">
+        <p>ENCRIPTE</p>
+      </button>
+
+      <!-- Resultado-->
+      <fieldset>
+        <h3><span>Seu</span> Resultado</h3>
+        <textarea name="resultado" id="resultado" readonly></textarea>
+      </fieldset>
+
+    </form>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <a href="https://github.com/RayanArgolo03" target="_blank" rel="noopener noreferrer"><img src="./img/github.png"
+        width="20" height="20"></a>
+
+    <a href="https://www.linkedin.com/in/rayanargolo/" target="_blank" rel="noopener 
+    noreferrer"><img src="./img/linkedin.png" 
+        width="20" height="20"></a>
+
+    <p>★</p>
+    <p>By Rayan Argolo</p>
+  </footer>
+
+</body>
+  <script src="./script/script.js"></script>
+</html>
