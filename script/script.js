@@ -1,6 +1,4 @@
 
-// ------------------------------------- options code/decode - 64/cesar --------------------------------------
-
 // Chamando Botoes Rad, Botao para imprimir, Mensagem, Incremento e Resultado
 var radio = document.querySelectorAll(".radio");
 var buttonResult = document.querySelector(".btnResult");
@@ -9,7 +7,7 @@ var key = document.getElementById("chave");
 var result = document.getElementById("resultado");
 
 
-
+// Opções de Codifificar e Decodificar interagindo com Select
 buttonResult.addEventListener("click", function (event) {
     event.preventDefault();
     var cod = document.getElementById("cripto").value;
@@ -29,11 +27,11 @@ buttonResult.addEventListener("click", function (event) {
         result.value = atob(msgvalue);
     }
 });
-// ------------------------------------- options code/decode - 64/cesar ---------------------------------------
 
 
 
-// ------------------------------------ decode function cifra de cesar ----------------------------------
+
+// Função de decodificar em Cifra de César
 function decodeCesar(msg, key) {
     return msg
         .map((str) => {
@@ -56,11 +54,11 @@ function decodeCesar(msg, key) {
         })
         .join("");
 }
-// ------------------------------------ decode function cifra de cesar ----------------------------------
 
 
 
-//-------------------------------------  code function cifra de cesar ------------------------------------
+
+// Função de Codificar em Cifra de César
 function codeCesar(msg, key) {
     return msg
         .map((str) => {
@@ -75,11 +73,11 @@ function codeCesar(msg, key) {
         })
         .join("");
 }
-//-------------------------------------  code function cifra de cesar ------------------------------------
 
 
 
-// ----------------------------------------- display div -----------------------------------------
+
+// Incremento da Cifra de César
 var chaveCifra = document.querySelector(".chaveCifra");
 var codSelect = document.addEventListener("click", function () {
     var cod = document.getElementById("cripto").value;
